@@ -24,6 +24,7 @@ alias l='ls -CF'
 #alias sdr='sudo shutdown -r now'
 
 alias emacs='emacs -nw'
+alias addnettest='docker network create test'
 alias psql='docker run -it --rm --net=test postgres:9 psql'
 alias mysql='docker run -it --rm -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --net=test --entrypoint="mysql" mysql/mysql-server:5.7'
 alias mysqldump='docker run -it --rm -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --net=test --entrypoint="mysqldump" mysql/mysql-server:5.7'
