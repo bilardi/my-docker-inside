@@ -1,0 +1,17 @@
+[user]
+	name = Alessandra Bilardi
+	email = alessandra.bilardi@gmail.com
+[core]
+	editor = emacs
+	excludesfile = /root/.gitignore_global
+[diff]
+#	external = /root/bin/git-meld
+	external = diff -y
+[color]
+	ui = true
+	status = auto
+	branch = auto
+[format]
+	pretty = medium
+[alias]
+        tree = log --graph --decorate --pretty=medium --abbrev-commit
