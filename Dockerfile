@@ -4,7 +4,7 @@ RUN apk add --update --no-cache bash git emacs-nox iptables tzdata && rm -rf /va
 RUN cp /usr/share/zoneinfo/Europe/Rome /etc/localtime
 RUN echo "Europe/Rome" > /etc/timezone
 RUN apk del tzdata && rm -rf /var/cache/apk/*
+RUN ntpd -d -q -n -p it.pool.ntp.org
 
-# COPY aliases for mysql, mysqldump, php, ..
+# COPY aliases for mysql, mysqldump, psql, ..
 COPY .* /root/
-#COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh

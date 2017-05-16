@@ -4,9 +4,8 @@
 [core]
 	editor = emacs
 	excludesfile = /root/.gitignore_global
-[diff]
+#[diff]
 #	external = /root/bin/git-meld
-	external = diff -y
 [color]
 	ui = true
 	status = auto
